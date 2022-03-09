@@ -1,11 +1,7 @@
 package com.example.task;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -13,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Signup extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private EditText mName,mUserName,mPassword,mRePassword;
@@ -26,12 +24,12 @@ public class Signup extends AppCompatActivity implements AdapterView.OnItemSelec
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-        /*
+
         mGender = findViewById(R.id.spinner);
         mGender.setOnItemSelectedListener(this);
         ArrayAdapter ad = new ArrayAdapter(this, android.R.layout.simple_spinner_item, genderArr);
         ad.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        mGender.setAdapter(ad);*/
+        mGender.setAdapter(ad);
 
         mName = (EditText) findViewById(R.id.name);
         mUserName = (EditText) findViewById(R.id.userName);
